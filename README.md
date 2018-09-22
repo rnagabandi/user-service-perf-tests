@@ -2,9 +2,9 @@
 
 Objective:
 
-o Scalable
-o Sustainable
-o Stability
+	o Scalable
+	o Sustainable
+	o Stability
 
 Dev Set Up:
 
@@ -27,7 +27,7 @@ Tuning the Jmeter:
 
 Its very important to tune the JVM arguments so that the resources of JMeter are fully utilized to provide the best performance.
 
-Heap Size: Increase the Heap size of JVM which JMeter will be using and set this parameter according to the resources allocated to the server. You can set this parameter in JMeter’s configuration file. Heap size is the space which JVM uses to create the necessary objects during the test run. By default, Its 512 Megabytes which is very less and your test might end up failing raising outofmemory error.
+Heap Size: Increase the Heap size of JVM which JMeter will be using and set this parameter according to the resources allocated to the server. You can set this parameter in JMeterâ€™s configuration file. Heap size is the space which JVM uses to create the necessary objects during the test run. By default, Its 512 Megabytes which is very less and your test might end up failing raising outofmemory error.
 Tuning the Eden space parameter: If you are increasing the heap size then you should also tune the NEW parameter in JMeter startup script as it says the eden space should also be widened heap space is getting wider. It helps in decreasing the frequency of minor GC.
 Add below parameters in jmeter/bin/jmeter.sh or jmeter/bin/jmeter.bat file
 
